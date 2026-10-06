@@ -1,9 +1,4 @@
-import DataBase.MotoristaDAO;
-import DataBase.PassageiroDAO;
-import DataBase.CobradorDAO;
-import DataBase.OnibusDAO;
-import DataBase.TerminalDAO;
-import DataBase.RotaDAO;
+
 import GestaoVeiculos.Onibus;
 import GestaoVeiculos.Rota;
 import GestaoVeiculos.Terminal;
@@ -70,8 +65,7 @@ public class Cadastro {
 
         System.out.println("Passageiro adicionado!");
         passageiro.exibirInformacoes();
-        PassageiroDAO dao = new PassageiroDAO();
-        dao.salvar(passageiro);
+        
 
     }
 
@@ -130,8 +124,7 @@ public class Cadastro {
 
         System.out.println("Cobrador adicionado!");
         cobrador.exibirInformacoes();
-        CobradorDAO dao = new CobradorDAO();
-        dao.salvar(cobrador);
+       
     }
 
     public static void novoOnibus(Scanner entrada) {
@@ -179,8 +172,7 @@ public class Cadastro {
 
         System.out.println("Onibus adicionado!");
         onibus.informacoesOnibus();
-        OnibusDAO dao = new OnibusDAO();
-        dao.salvar(onibus);
+        
     }
 
     public static void novoMotorista(Scanner entrada) {
@@ -248,8 +240,7 @@ public class Cadastro {
 
         System.out.println("Motorista adicionado!");
         motorista.exibirInformacoes();
-        MotoristaDAO dao = new MotoristaDAO();
-        dao.salvar(motorista);
+       
     }
 
     public static void novaRota(Scanner entrada) {
@@ -277,8 +268,7 @@ public class Cadastro {
 
         System.out.println("Informacoes da linha: ");
         rota.imprimirItinerario();
-        RotaDAO dao = new RotaDAO();
-        dao.salvar(rota);
+        
     }
 
     public static void novoTerminal(Scanner entrada) {
@@ -315,7 +305,6 @@ public class Cadastro {
         }
         System.out.println("Terminal adicionado.");
         terminal.toString();
-        TerminalDAO dao = new TerminalDAO();
-        dao.salvar(terminal);
+        
     }
 }
